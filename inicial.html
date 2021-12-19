@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js">
+
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+
+<body>
+	<ion-app>
+		<ion-tabs>
+			<ion-menu side="start" content-id="mainId">
+				<ion-header>
+					<ion-toolbar side="end" color="dark">
+						<ion-title>Dicas</ion-title>
+					</ion-toolbar>
+				</ion-header>
+				<ion-content>
+					<ion-list>
+						<ion-item>Verifique se em sua casa não existem fios desencapados ou ligações elétricas mal feitas. Elas podem provocar
+							um grande acidente;</ion-item>
+						<ion-item>Alerte sua família para os perigos com fogo - fósforos, substâncias inflamáveis, líquidos quentes, panelas
+							no fogo, etc. Reserve um local seguro para seu acondicionamento e não permita que as crianças brinquem com eles;</ion-item>
+						<ion-item>Objetos como lâminas, facas, e ferramentas devem ser guardadas de forma organizada em local próprio, longe
+							do alcance das crianças;</ion-item>
+						<ion-item>Não re-aproveite embalagens de refrigerantes, maionese, etc para o acondicionamento de substâncias tóxicas
+							e inflamáveis;</ion-item>
+						<ion-item>Fique atento para condições de limpeza de pisos, escadas e estado de conservação de elevadores;</ion-item>
+						<ion-item>Sinalize áreas em que estejam sendo realizadas obras, manutenção ou mesmo limpeza;</ion-item>
+						<ion-item>Cuidado ao manusear ferramentas agrícolas, fertilizantes, produtos veterinários, etc. utilize equipamentos
+							de proteção individual</ion-item>
+						<ion-item>Realize sempre a manutenção de máquinas e equipamentos agrícolas</ion-item>
+						<ion-item>Cuidado com a exposição prolongada ao sol. Utilize protetores solares, além de roupas e bonés</ion-item>
+						<ion-item>Cuidado com ventos e chuvas fortes. Procure um local coberto e seguro</ion-item>
+						<ion-item>Não discuta. Entregue ao criminoso o que ele exigir. Assim, o tempo do roubo será menor;</ion-item>
+					</ion-list>
+				</ion-content>
+			</ion-menu>
+			<div class="ion-page" id="mainId">
+			</div>
+			<ion-menu-controller></ion-menu-controller>
+			<ion-tab tab="home">
+				<ion-toolbar color="dark">
+					<ion-buttons slot="end">
+						<ion-button href="lista.html">
+							<ion-icon color="success" name="call"></ion-icon>
+						</ion-button>
+					</ion-buttons>
+					<ion-title>Noticias</ion-title>
+				</ion-toolbar>
+				<ion-content>
+					<ion-list>
+						<ion-item>Carro roubado é recuperado pela PMDF em Ceilândia</ion-item>
+						<ion-item>Homem é preso por receptação de celular em Taguatinga</ion-item>
+						<ion-item>PMDF recupera mais um carro roubado</ion-item>
+						<ion-item>PMDF apreende arma e mais de 1,5kg de cocaína no Gama</ion-item>
+						<ion-item>Mulher foragida da Justiça é presa em Samambaia</ion-item>
+						<ion-item>Homem é preso no Gama com arma de fogo</ion-item>
+						<ion-item>Policial de folga localiza carro roubado</ion-item>
+						<ion-item>PMDF recupera carro duas horas após o roubo</ion-item>
+						<ion-item>Cão Drago encontra droga na Rodoviária Interestadual de Brasília</ion-item>
+						<ion-item>Homem que plantava maconha é preso em Taguatinga</ion-item>
+						<ion-item>PMDF apreende duas armas de fogo em menos de 30 minutos em Samambaia</ion-item>
+					</ion-list>
+				</ion-content>
+			</ion-tab>
+			<ion-tab tab="settings">
+				<ion-toolbar color="dark">
+					<ion-buttons slot="end">
+						<ion-button href="lista.html">
+							<ion-icon color="success" name="call" </ion-icon>
+						</ion-button>
+					</ion-buttons>
+					<ion-title Color="danger">Emergência</ion-title>
+				</ion-toolbar>
+				<ion-content>
+					<ion-grid class="tela-cheia">
+						<ion-row class="tela-cheia ion-justify-content-center">
+							<ion-item>
+								<ion-input Color="dark" placeholder="Nome" type="text"></ion-input>
+							</ion-item>
+						</ion-row>
+					</ion-grid>
+					<ion-grid class="tela-cheia">
+						<ion-row class="tela-cheia ion-justify-content-center">
+							<ion-item>
+								<ion-input Color="dark" placeholder="Ocorrência" type="text"></ion-input>
+							</ion-item>
+						</ion-row>
+					</ion-grid>
+					<ion-grid class="tela-cheia">
+						<ion-row class="tela-cheia ion-justify-content-center">
+							<ion-item>
+								<ion-input Color="dark" placeholder="Cidade"></ion-input>
+							</ion-item>
+						</ion-row>
+					</ion-grid>
+					<ion-grid class="tela-cheia">
+						<ion-row class="tela-cheia ion-justify-content-center">
+							<ion-item>
+								<ion-input Color="dark" placeholder="Endereço"></ion-input>
+							</ion-item>
+						</ion-row>
+					</ion-grid>
+					<ion-grid class="tela-cheia">
+						<ion-row class="tela-cheia ion-justify-content-center">
+								<ion-nav-buttons>
+									<ion-button href="inicial.html" color="danger">Solicitar Ajuda</ion-button>
+								</ion-nav-buttons>
+						</ion-row>
+					</ion-grid>
+				</ion-content>
+			</ion-tab>
+			<ion-tab-bar color="dark" slot="bottom">
+				<ion-tab-button tab="home">
+					<ion-label>Início</ion-label>
+					<ion-icon Color="primary" name="receipt"></ion-icon>
+				</ion-tab-button>
+				<ion-tab-button tab="settings">
+					<ion-label>Emergência</ion-label>
+					<ion-icon color="danger" name="megaphone"></ion-icon>
+				</ion-tab-button>
+				<ion-tab-button href="index.html">
+					<ion-label>Entrar</ion-label>
+					<ion-icon color="secondary" name="log-in"></ion-icon>
+				</ion-tab-button>
+			</ion-tab-bar>
+		</ion-tabs>
+	</ion-app>
+	<script src="script.js">
+	</script>
+</body>
+
+</html>
