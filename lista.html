@@ -2,126 +2,170 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>List</title>
-	<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-	<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js">
 
-	</script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 
 <body>
-	<ion-app>
-		<ion-header translucent>
-			<ion-toolbar color="dark">
-				<ion-buttons slot="start">
-					<ion-button href="inicial.html">
-						<ion-icon name="arrow-back-circle"></ion-icon>
-					</ion-button>
-				</ion-buttons>
-				<ion-title color="success">Contatos</ion-title>
-			</ion-toolbar>
-		</ion-header>
+  <ion-app>
+    <ion-header translucent>
+      <ion-toolbar color="dark">
+        <ion-buttons slot="start">
+          <ion-button href="inicial.html">
+            <ion-icon name="arrow-back-circle"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title color="success">Contatos</ion-title>
+      </ion-toolbar>
+    </ion-header>
 
-		<ion-content fullscreen>
-			<ion-list>
-				<ion-list-header>
-					Contatos Políciais
-				</ion-list-header>
-				</ion-item>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Lucas</ion-label>
-						<ion-note Color="danger" slot="end">61996574674</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Marcos</ion-label>
-						<ion-note Color="danger" slot="end">61996532647</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Borges</ion-label>
-						<ion-note Color="danger" slot="end">61996547694</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Vieira</ion-label>
-						<ion-note Color="danger" slot="end">61991425645</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Barcos</ion-label>
-						<ion-note Color="danger" slot="end">61992964739</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Michael</ion-label>
-						<ion-note Color="danger" slot="end">61996985434</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Lima</ion-label>
-						<ion-note Color="danger" slot="end">61996987612</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-			<ion-list>
-				<ion-item-sliding>
-					<ion-item href="#">
-						<ion-avatar slot="start">
-							<ion-icon size- "large" name="person-sharp"></ion-icon>
-						</ion-avatar>
-						<ion-label>soldado Nunes</ion-label>
-						<ion-note Color="danger" slot="end">61996410622</ion-note>
-					</ion-item>
-				</ion-item-sliding>
-			</ion-list>
-		</ion-content>
-	</ion-app>
+    <ion-content fullscreen>
+      <ion-list>
+        <ion-list-header>
+          Contatos dos Políciais
+        </ion-list-header>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pravatar.cc/300?u=b"></ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Connor Smith</h2>
+            <p>Cabo</p>           
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pravatar.cc/300?u=a"></ion-img>
+          </ion-avatar>
+          <ion-label class="danger">
+            <h2>Daniel Smith</h2>
+            <p>Comandate</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img
+              src="https://img.freepik.com/fotos-premium/um-soldado-em-um-uniforme-de-camuflagem-com-a-palavra-exercito-na-frente_878402-1036.jpg">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Greg Smith</h2>
+            <p>Soldado</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://www.designi.com.br/images/preview/10979965.jpg">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Zoey Smith</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img
+              src="https://i.pinimg.com/236x/b3/68/65/b3686548a4ce2c1f973cce40274edf00--special-forces-marine.jpg">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Marcos Da Silva</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pinimg.com/236x/81/18/db/8118db6584315e181cc971a9163d22e9.jpg">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Luck Borges</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pinimg.com/originals/fe/20/19/fe20199c4d3f6cb1917df4725650a362.jpg">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Antony Smith</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://i.pinimg.com/originals/44/2e/a6/442ea653b837d6ec5e5ee2f077f0a167.jpg">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Michel Smith</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_HxYoXADnGe209uQuwQf8rqfYT4nC3WGYhZU-C2yUvCf26FhGXataoZr6rOsCpiAya10&usqp=CAU">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Isaac Smith</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_HxYoXADnGe209uQuwQf8rqfYT4nC3WGYhZU-C2yUvCf26FhGXataoZr6rOsCpiAya10&usqp=CAU">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Marcelo Conceição</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUB4YDPXNnIhXnIX1qnd1oqu1MN9MPI0w1mFNl2ZEgK3PiLDuFtbPXukmkC2AAKaU5qAU&usqp=CAU">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Isaac Smith</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+        <ion-item>
+          <ion-avatar slot="start">
+            <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLHxMnByquooEJRtzt27lcN0hyGEAcg-pjf3p588n6hmU4lYL5wxuN3P9KIZxY8wcC5nU&usqp=CAU">
+            </ion-img>
+          </ion-avatar>
+          <ion-label>
+            <h2>Pedro Pereira</h2>
+            <p>Sargento</p>
+          </ion-label>
+          <ion-icon slot="end" name="call-sharp"></ion-icon>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-app>
 </body>
 
 </html>

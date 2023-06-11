@@ -25,11 +25,14 @@
 			</ion-toolbar>
 		</ion-header>
 		<ion-content>
-			<ion-grid class="tela-cheia">
+			<ion-grid class="tela-cheia ion-justify-content-center ion-align-items-center">
+        <ion-img 
+          src="https://i0.wp.com/blog.portaleducacao.com.br/wp-content/uploads/2021/04/portal-educacao-blog-policia-.jpg"
+          alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
 				<ion-row class="tela-cheia ion-justify-content-center ion-align-items-center">
 					<ion-item>
 						<ion-label Color="dark" position="floating">Nome</ion-label>
-						<ion-input type="text"></ion-input>
+						<ion-input color="danger" type="text"></ion-input>
 					</ion-item>
 				</ion-row>
 			</ion-grid>
@@ -37,15 +40,15 @@
 				<ion-row class="tela-cheia ion-justify-content-center ion-align-items-center">
 					<ion-item>
 						<ion-label Color="dark" position="floating">E-mail</ion-label>
-						<ion-input type="email"></ion-input>
+						<ion-input color="danger" type="email"></ion-input>
 					</ion-item>
 				</ion-row>
 			</ion-grid>
 			<ion-grid class="tela-cheia">
 				<ion-row class="tela-cheia ion-justify-content-center ion-align-items-center">
 					<ion-item>
-						<ion-label Color="dark" position="floating">senha</ion-label>
-						<ion-input type="password"></ion-input>
+						<ion-label Color="dark" position="floating">Senha</ion-label>
+						<ion-input color="danger" type="password"></ion-input>
 					</ion-item>
 				</ion-row>
 			</ion-grid>
@@ -53,7 +56,7 @@
 				<ion-row class="tela-cheia ion-justify-content-center ion-align-items-center">
 					<ion-item>
 						<ion-label Color="dark" position="floating">Cidade</ion-label>
-						<ion-input></ion-input>
+						<ion-input color="danger"></ion-input>
 					</ion-item>
 				</ion-row>
 			</ion-grid>
@@ -61,14 +64,15 @@
 				<ion-row class="tela-cheia ion-justify-content-center ion-align-items-center">
 					<ion-item>
 						<ion-label Color="dark" position="floating">Estado</ion-label>
-						<ion-input></ion-input>
+						<ion-input color="danger"></ion-input>
 					</ion-item>
 				</ion-row>
 			</ion-grid>
 			<ion-grid class="tela-cheia">
 				<ion-row class="tela-cheia ion-justify-content-center ion-align-items-center">
 					<ion-nav-buttons>
-						<ion-button href="inicial.html" color="danger">Cadastrar</ion-button>
+						<ion-button id="open-loading" href="inicial.html" color="danger">Cadastrar</ion-button>
+            <ion-loading trigger="open-loading" message="Carregando..." duration="9000"></ion-loading>
 					</ion-nav-buttons>
 				</ion-row>
 				<ion-grid class="tela-cheia">
